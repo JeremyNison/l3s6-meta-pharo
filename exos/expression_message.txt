@@ -1,0 +1,72 @@
+xpressions et Messages
+
+Exercice : Objets Littéraux
+
+'Hello, Dave' --> ByteString
+1.3           --> SmallFloat64
+#node1        --> ByteSymbol
+#(2 33 4)     --> Array
+[ :each | each scale: 1.5 ] --> BlockClosure
+$A            --> Character
+true          --> True
+1             --> SmallInteger
+
+Exercice : Messages
+
+3 + 4        --> Receveur  : 3
+    	     --> Sélecteur : +
+	     --> Argument  : 4
+	     --> Resultat  : 7
+
+Date today   --> Receveur  : Date
+             --> Sélecteur : today
+             --> Resultat  : 8 January 2021
+
+anArray at:1 put: 'hello' --> Receveur  : anArray 
+             		  --> Argument  : 1, 'hello'
+             		  --> Resultat  : Crée une array #(h e l l o)
+
+anArray at: i             --> Receveur : anArray
+	    		  --> Argument : i
+			  --> Résultat : Renvoie l'element à l'indice i
+
+#(a b c d e f) includesAll: #(f d b) --> Receveur  : #(a b c d e f)
+      	       		    	     --> Argument  : #(f d b)
+				     --> true
+				     
+#(2 33 -4 67) collect: [ :each | each abs ] --> Receveur : #(2 33 -4 67)
+       	      	       	       	      	    --> Argument: [ :each | each abs ]										     --> Resultat : #(2 33 4 67) 
+
+25 @ 50    --> Receveur  : 25
+           --> Sélecteur : @
+           --> Argument  : 50
+           --> Résultat  : (25@50)
+
+SmallInteger maxVal --> Receveur  : SmallInteger
+                    --> Sélecteur : maxVal
+                    --> Résultat  : 1152921504606846975
+
+
+25 @ 50    --> Receveur  : 25
+     	   --> Sélecteur : @
+	   --> Argument  : 50
+	   --> Résultat  : (25@50)
+
+SmallInteger maxVal --> Receveur  : SmallInteger
+	     	    --> Sélecteur : maxVal
+		    --> Résultat  : 1152921504606846975
+
+true | false --> Receveur  : true
+       	     --> Sélecteur : |
+	     --> Arguments : false
+	     --> Réslutat  : true
+
+Point selectors --> Receveur  : Point
+      		--> Sélecteur : selectors
+		--> Résultat  : #(#reflectedAbout: #rotateBy:centerAt: #adaptToNumber:andSend: #squaredDistanceTo: #adaptToCollection:andSend: #theta #transposed #- #fourDirections #crossProduct: #scaleFrom:to: #veryDeepCopyWith: #* #setR:degrees: #isFloatPoint #'//' #fromSton: #sortsBefore: #+ #dist: #asFloatPoint #roundDownTo: #asMargin #isSelfEvaluating #grid: #adhereTo: #/ #closeTo: #'>=' #sign #flipBy:centerAt: #angleWith: #isZero #guarded #octantOf: #nearestPointAlongLineFrom:to: #fuelAccept: #'<=' #stonOn: #quadrantOf: #truncated #deepCopy #scaleBy: #asPoint #min:max: #roundTo: #= #scaledByDisplayScaleFactor #y #rectangle: #'\' #onLineFrom:to:within: #max #abs #floor #normalized #printOn: #distanceTo: #angle #bearingToPoint: #> #r #ceiling #setX:setY: #reciprocal #asIntegerPoint #negated #normal #eightNeighbors #insideTriangle:with:with: #interpolateTo:at: #min: #asNonFractionalPoint #hash #nearestPointOnLineFrom:to: #rightRotated #storeOn: #scaleTo: #isIntegerPoint #triangleArea:with: #x #translateBy: #bitShiftPoint: #truncateTo: #< #rotateBy:about: #directionToLineFrom:to: #max: #roundUpTo: #isInsideCircle:with:with: #degrees #corner: #min #onLineFrom:to: #fourNeighbors #extent: #dotProduct: #rounded #isPoint #sideOf: #leftRotated #to:intersects:to: #to:sideOf:)
+
+Exercice : Nommage
+
+Transferator : C'est une variable globale ou une variable de classe
+
+rectangle    : C'est une variable temporaire, d'instance ou de méthode
