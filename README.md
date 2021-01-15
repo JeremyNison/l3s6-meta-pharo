@@ -3,7 +3,8 @@
 - Session: janvier-février 2021
 - Etudiant: Jérémy NISON
 
-### Avancement des TP:
+### Avancement des TP et exercices:
 
-* Counter : fini. Package `Counter` dans le dossier `src`
-* Expressins et messages : fini. Réponses `expression_message.txt` dans le dossier `exos`
+* Counter : fini. Package `Counter` dans le dossier `src`.
+* Expressions et messages : fini. Réponses `expression_message.txt` dans le dossier `exos`.
+* Dice (Exo-DSL) : fini. Package `Dice` dans le dossier `src`.
