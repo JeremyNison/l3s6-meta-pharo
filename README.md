@@ -11,3 +11,4 @@
 * Exercice "Collections" : fini. Réponses dans le fichier `Collection.txt` dans le dossier `exos`.
 * Dice (Double-Dispatch) : fini. Package `Dice` dans le dossier `src`.
 * pierre-feuille-ciseau : fini. Package `RPS` dans le dossier `src`.
+* Expression interpreter : fini. Package `Expressions` dans le dossier `src`.
