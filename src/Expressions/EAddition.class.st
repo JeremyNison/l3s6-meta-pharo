@@ -1,24 +1,39 @@
 Class {
 	#name : #EAddition,
-	#superclass : #Object,
-	#instVars : [
-		'left',
-		'right'
-	],
+	#superclass : #EBinaryExpression,
 	#category : #Expressions
 }
 
-{ #category : #accessing }
-EAddition >> evaluate [ 
-	^ right evaluate + left evaluate 
+{ #category : #'as yet unclassified' }
+EAddition class >> fivePlusThree [
+	<sampleInstance>
+	| ep1 ep2 |
+	ep1 := EConstant value: 5.
+	ep2 := EConstant value: 3.
+	^ self new left: ep1; right: ep2
+]
+
+{ #category : #'instance creation' }
+EAddition class >> left: anInteger right: anInteger2 [
+	^ self new left: anInteger; right: anInteger2
 ]
 
 { #category : #accessing }
-EAddition >> left: anExpression [
-	left := anExpression
+EAddition >> evaluateWith: anObject [
+	^ (right evaluateWith: anObject)
+		+ (left evaluateWith: anObject)
 ]
 
-{ #category : #accessing }
-EAddition >> right: anExpression [
-	right := anExpression
+{ #category : #printing }
+EAddition >> operatorString [
+	^ ' + '
+]
+
+{ #category : #printing }
+EAddition >> printOn: aStream [
+	aStream nextPutAll: '( '.
+	left printOn: aStream.
+	aStream nextPutAll: ' + '.
+	right printOn: aStream.
+	aStream nextPutAll: ' )'
 ]
