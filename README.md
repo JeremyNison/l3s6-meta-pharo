@@ -12,3 +12,7 @@
 * Dice (Double-Dispatch) : fini. Package `Dice` dans le dossier `src`.
 * pierre-feuille-ciseau : fini. Package `RPS` dans le dossier `src`.
 * Expression interpreter : fini. Package `Expressions` dans le dossier `src`.
+* Dessin des AST : fini. Réponses dans le fichier `Exercices-AST.pdf` dans le dossier `exos`.
+* AST-Visitor : fini. Packahe `AST-Example` dans le dossier `src`
+* Fun with interpreters (full) : part 4.7. Packages `Champollion Core` et `Champollion Test` dans le dossier `src`.
+ 
